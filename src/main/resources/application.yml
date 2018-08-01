@@ -1,0 +1,16 @@
+server:
+ port: 8001
+
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        health:
+          enabled:  false
+        native:
+          searchLocations: /opt/data/config/
+          searchPaths: /
+  application:
+   name: epic-config
